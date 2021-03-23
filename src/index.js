@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'; // BrowserRouter 불러오기
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// App 을 BroswerRouter 로 감싸기
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
